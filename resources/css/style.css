@@ -1,0 +1,79 @@
+html, header, body {
+  font-size: 16px;
+  color: grey;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  justify-content: space-between;
+}
+
+header #lion-logo {
+  margin-left: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#colmar, #academy {
+  font-size: 2rem;
+}
+
+#colmar {
+  color: rgba(128, 128, 128, 1);
+}
+
+#academy {
+  color: rgba(128, 128, 128, 0.55);
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.filler {
+  background-color: teal;
+  padding-right: 1rem;
+}
+
+header nav ul li a {
+  background-color: white;
+}
+
+header ul li:last-child {
+  padding-right: 1.5rem;
+}
+
+.container {
+  display: flex;
+}
+
+.container.master-pic {
+  background-color: gray;
+}
+
+.container.image {
+  margin: 2rem 1.5rem;
+}
+
+header img {
+  width: 60%;
+}
+
+.container.text {
+  display: column;
+}
+
+.button {
+  text-align: center;
+}
+
+.button a {
+  line-height: 1rem;
+}
