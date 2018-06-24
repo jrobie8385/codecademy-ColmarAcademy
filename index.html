@@ -29,6 +29,7 @@
   </div>
 </header>
 
+<!-- main image container section -->
 <body>
 <div class="container master-pic">
   <div class="container image">
@@ -41,8 +42,9 @@
   </div>
 </div>
 
+<!-- additional info section -->
 <div class="container">
-  <div class="left-box">
+  <div class="left-box non-mobile">
     <img src="./resources/images/information-main.jpg" alt="person reading">
     <h1>It doesn't hurt to keep practicing</h1>
     <h2>"Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -51,7 +53,8 @@
   </div>
   <div class="right-box">
     <div id="mini-boxes">
-      <img src="./resources/images/information-orientation.jpg" alt="people walking">
+        <img src="./resources/images/information-orientation.jpg" class="non-mobile" alt="people walking">
+        <img src="./resources/images/information-orientation-mobile.jpg" class="mobile-only" alt="people walking">
       <div id="text">
         <span style="font-weight: bold">Orientation date</span>
         <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
@@ -59,7 +62,8 @@
       </div>
     </div>
     <div id="mini-boxes">
-      <img src="./resources/images/information-campus.jpg" alt="picture of map">
+      <img src="./resources/images/information-campus.jpg" class="non-mobile" alt="picture of map">
+      <img src="./resources/images/information-campus-mobile.jpg" class="mobile-only" alt="people walking">
       <div id="text">
         <span style="font-weight: bold">Our campus</span>
         <span>Find which campus</span>
@@ -67,7 +71,8 @@
       </div>
     </div>
     <div id="mini-boxes" style="background-color: rgba(211, 211, 211, 0.5)">
-      <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+      <img src="./resources/images/information-guest-lecture.jpg" class="non-mobile" alt="Oliver Sack">
+      <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobile-only" alt="people walking">
       <div id="text">
         <span style="font-weight: bold">Our guest lecture</span>
         <span>Join a keynote with Oliver Sack about music in medical treatment</span>
@@ -77,48 +82,50 @@
   </div>
 </div>
 
+<!-- course options section -->
 <div class="learning-container">
   <h1 id="start-learning-title">Start Learning<h1>
     <div class="mini-learning-boxes">
       <div id="mini-learning-box">
-        <img src="./resources/images/course-software.jpg" alt="desktop computers">
+        <img src="./resources/images/course-software.jpg" class="non-mobile" alt="desktop computers">
         <span style="font-weight: bold">Software Engineering</span>
-        <span>COURSES</span>
-        <a>Web Development, Mobile Development, iOT, APIs</a>
+        <span class="non-mobile">COURSES</span>
+        <a  class="non-mobile">Web Development, Mobile Development, iOT, APIs</a>
       </div>
       <div id="mini-learning-box">
-        <img src="./resources/images/course-computer-art.jpg" alt="mobile phone">
+        <img src="./resources/images/course-computer-art.jpg" class="non-mobile" alt="mobile phone">
         <span style="font-weight: bold">Computer art</span>
-        <span>COURSES</span>
-        <a>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</a>
+        <span  class="non-mobile">COURSES</span>
+        <a class="non-mobile">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</a>
       </div>
       <div id="mini-learning-box">
-        <img src="./resources/images/course-design.jpg" alt="camera">
+        <img src="./resources/images/course-design.jpg" class="non-mobile" alt="camera">
         <span style="font-weight: bold">Design</span>
-        <span>COURSES</span>
-        <a>User Experience Design, User Research, Visual Design</a>
+        <span  class="non-mobile">COURSES</span>
+        <a class="non-mobile">User Experience Design, User Research, Visual Design</a>
       </div>
       <div id="mini-learning-box">
-        <img src="./resources/images/course-data.jpg" alt="laptop">
+        <img src="./resources/images/course-data.jpg" class="non-mobile" alt="laptop">
         <span style="font-weight: bold">Data</span>
-        <span>COURSES</span>
-        <a>Data Science, Big Data, SQL, Data Visualization</a>
+        <span class="non-mobile">COURSES</span>
+        <a class="non-mobile">Data Science, Big Data, SQL, Data Visualization</a>
       </div>
       <div id="mini-learning-box">
-        <img src="./resources/images/course-business.jpg" alt="chess table">
+        <img src="./resources/images/course-business.jpg" class="non-mobile" alt="chess table">
         <span style="font-weight: bold">Business</span>
-        <span>COURSES</span>
-        <a>Product Development, Business Development, Startup</a>
+        <span class="non-mobile">COURSES</span>
+        <a class="non-mobile">Product Development, Business Development, Startup</a>
       </div>
       <div id="mini-learning-box">
-        <img src="./resources/images/course-marketing.jpg" alt="watch">
+        <img src="./resources/images/course-marketing.jpg" class="non-mobile" alt="watch">
         <span style="font-weight: bold">Marketing</span>
-        <span>COURSES</span>
-        <a>Analytics, Content Marketing, Mobile Marketing</a>
+        <span class="non-mobile">COURSES</span>
+        <a class="non-mobile">Analytics, Content Marketing, Mobile Marketing</a>
       </div>
     </div>
 </div>
 
+<!-- thesis section -->
 <div class="thesis-section">
   <h1 id="thesis-title">Thesis exhibit</h1>
   <div class="thesis-container">
@@ -126,13 +133,13 @@
       <video width="100%" controls>
         <source src="./resources/videos/thesis.mp4" type="video/mp4">
       </video>
-      <h1>Reimagine urban</h1>
-      <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      <h1 class="non-mobile">Reimagine urban</h1>
+      <h2 class="non-mobile">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
         quae ab illo inventore veritatis et quasi architecto beatae vitae
         dicta sunt explicabo.</h2>
     </div>
-    <div class="right-thesis-container">
+    <div class="right-thesis-container non-mobile">
       <div id="mini-boxes" style="background-color: rgba(211, 211, 211, 0.5)">
         <img src="./resources/images/thesis-fisma.jpg" alt="phone and paper">
         <div id="text">
@@ -156,8 +163,8 @@
 <footer>
   <a>© 2016 Colmar Academy. All rights reserved</a>
   <nav>
-    <a>Terms</a>
-    <a>Privacy</a>
+    <a class="non-mobile">Terms</a>
+    <a class="non-mobile">Privacy</a>
   </nav>
 </footer>
 

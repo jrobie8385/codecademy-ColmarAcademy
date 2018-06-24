@@ -19,7 +19,7 @@ html, header, body {
 /*--- header ---*/
 
 header {
-/*  border: 1px solid red;
+/*border: 1px solid red;
   z-index: 1;
   background-color: white;
   position: fixed;
@@ -140,10 +140,12 @@ header .mobile-only {
 
 .container.text h1 {
   font-size: 2rem;
+  margin-left: 0.2rem;
 }
 
 .container.text h2 {
   font-size: 1.5rem;
+  margin-left: 0.5rem;
 }
 
 .container.text .button { /* Need to have space betwen ".container.text" and ".button" */
@@ -233,9 +235,10 @@ header .mobile-only {
 #mini-boxes {
   display: flex;
   margin-bottom: 1rem;
+  align-items: center;
 }
 
-#mini-boxes img {
+#mini-boxes .non-mobile {
   width: 35%;
   height: 40%;
 }
@@ -244,12 +247,54 @@ header .mobile-only {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 15px;
+  margin-left: 0.9rem;
 }
 
 #text span {
   font-size: 1.5rem;
   padding-bottom: 8px;
+}
+
+.right-box .mobile-only {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  #text span {
+    font-size: 1.10rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #text span {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {/*Make sure to put the colon (:) in the parenthesis*/
+  .right-box {
+    width: 100%;
+  }
+  #mini-boxes {
+    flex-direction: column;
+  }
+  .left-box.non-mobile {
+    display: none;
+  }
+  .right-box .non-mobile {
+    display: none;
+  }
+  .right-box .mobile-only {
+    display: flex;
+  }
+  #text {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 100%;
+  }
+  #text span {
+    font-size: 1.20rem;
+  }
 }
 
 /*--- Course Options ---*/
@@ -296,6 +341,52 @@ header .mobile-only {
   padding-left: 1rem;
 }
 
+@media only screen and (max-width: 720px) {
+  #mini-learning-box {
+    margin: 1rem;
+  }
+  #mini-learning-box span, #mini-learning-box a {
+    font-size: 0.75rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .learning-container {
+    background-color: white;
+    padding: 2rem 0rem;
+  }
+  .mini-learning-boxes {
+    display: block;
+  }
+  #mini-learning-box .non-mobile {
+    display: none;
+  }
+  #mini-learning-box {
+    display: block;
+    background-color: rgba(211, 211, 211, 0.28);
+    max-width: 100%;
+    margin: 0.5rem 0rem;
+    padding: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 7.5rem;
+    text-align: left;
+    justify-content: center;
+  }
+  #mini-learning-box span {
+    padding-left: 0rem;
+    padding-bottom: 0rem;
+    font-size: 1rem;
+  }
+  #mini-learning-box a {
+    font-size: 1rem;
+  }
+  #start-learning-title {
+    margin-bottom: 1rem;
+  }
+}
+
 /*--- Thesis section with video ---*/
 
 .thesis-section {
@@ -339,6 +430,36 @@ header .mobile-only {
   padding-left: 1.5rem;
 }
 
+@media only screen and (max-width: 1100px) {
+  .right-thesis-container #mini-boxes {
+    background-color: white !important;
+  }
+  .right-thesis-container img {
+    max-width: 100%;
+  }
+  .right-thesis-container span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .left-thesis-container .non-mobile {
+    display: none;
+  }
+  .right-thesis-container.non-mobile {
+    display: none;
+  }
+  .thesis-section {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .left-thesis-container {
+    width: 100%;
+  }
+}
+
 /*--- Footer section ---*/
 
 footer {
@@ -348,4 +469,10 @@ footer {
   padding-top: 1rem;
   height: 70px;
   border-top: 1px solid grey;
+}
+
+@media only screen and (max-width: 500px) {
+  footer .non-mobile {
+    display: none;
+  }
 }
