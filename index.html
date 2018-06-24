@@ -7,11 +7,11 @@
 </head>
 
 <header>
-  <div class="logo">
+  <div class="logo non-mobile">
     <img id="lion-logo" src="./resources/images/ic-logo.svg" alt="lion logo">
     <span><a id="colmar">COLMAR</a><a id="academy">ACADEMY</a></span>
   </div>
-  <nav>
+  <nav class="non-mobile">
     <ul>
       <li class="filler"><a>On campus</a></li>
       <li class="filler"><a>Online</a></li>
@@ -19,6 +19,14 @@
       <li>Sign in</li>
     </ul>
   </nav>
+  <div class="mobile-only">
+    <nav>
+      <img src="./resources/images/ic-logo.svg" alt="lion logo">
+      <img src="./resources/images/ic-on-campus.svg" alt="desk logo">
+      <img src="./resources/images/ic-online.svg" alt="computer screen">
+      <img src="./resources/images/ic-login.svg" alt="person">
+    </nav>
+  </div>
 </header>
 
 <body>
@@ -27,14 +35,131 @@
     <img src="./resources/images/banner.jpg" alt="students studying">
   </div>
   <div class="container text">
-    <h1>Learn something new everyday</h1>
+    <h1 style="font-weight: bold">Learn something new everyday</h1>
     <h2>Lorem ipsum dolor sti amet, consectetur adipiscing elit.</h2>
-    <a class="button">Start Here</a>
+    <a class="button" id="start-button">Start Here</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="left-box">
+    <img src="./resources/images/information-main.jpg" alt="person reading">
+    <h1>It doesn't hurt to keep practicing</h1>
+    <h2>"Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.</h2>
+    <h3>Emanuel, Sr Strategist at Hiring.com"</h3>
+  </div>
+  <div class="right-box">
+    <div id="mini-boxes">
+      <img src="./resources/images/information-orientation.jpg" alt="people walking">
+      <div id="text">
+        <span style="font-weight: bold">Orientation date</span>
+        <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
+        <span style="color: blue">Read More</span>
+      </div>
+    </div>
+    <div id="mini-boxes">
+      <img src="./resources/images/information-campus.jpg" alt="picture of map">
+      <div id="text">
+        <span style="font-weight: bold">Our campus</span>
+        <span>Find which campus</span>
+        <span style="color: blue">Read More</span>
+      </div>
+    </div>
+    <div id="mini-boxes" style="background-color: rgba(211, 211, 211, 0.5)">
+      <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+      <div id="text">
+        <span style="font-weight: bold">Our guest lecture</span>
+        <span>Join a keynote with Oliver Sack about music in medical treatment</span>
+        <span style="color: blue">Read More</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="learning-container">
+  <h1 id="start-learning-title">Start Learning<h1>
+    <div class="mini-learning-boxes">
+      <div id="mini-learning-box">
+        <img src="./resources/images/course-software.jpg" alt="desktop computers">
+        <span style="font-weight: bold">Software Engineering</span>
+        <span>COURSES</span>
+        <a>Web Development, Mobile Development, iOT, APIs</a>
+      </div>
+      <div id="mini-learning-box">
+        <img src="./resources/images/course-computer-art.jpg" alt="mobile phone">
+        <span style="font-weight: bold">Computer art</span>
+        <span>COURSES</span>
+        <a>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</a>
+      </div>
+      <div id="mini-learning-box">
+        <img src="./resources/images/course-design.jpg" alt="camera">
+        <span style="font-weight: bold">Design</span>
+        <span>COURSES</span>
+        <a>User Experience Design, User Research, Visual Design</a>
+      </div>
+      <div id="mini-learning-box">
+        <img src="./resources/images/course-data.jpg" alt="laptop">
+        <span style="font-weight: bold">Data</span>
+        <span>COURSES</span>
+        <a>Data Science, Big Data, SQL, Data Visualization</a>
+      </div>
+      <div id="mini-learning-box">
+        <img src="./resources/images/course-business.jpg" alt="chess table">
+        <span style="font-weight: bold">Business</span>
+        <span>COURSES</span>
+        <a>Product Development, Business Development, Startup</a>
+      </div>
+      <div id="mini-learning-box">
+        <img src="./resources/images/course-marketing.jpg" alt="watch">
+        <span style="font-weight: bold">Marketing</span>
+        <span>COURSES</span>
+        <a>Analytics, Content Marketing, Mobile Marketing</a>
+      </div>
+    </div>
+</div>
+
+<div class="thesis-section">
+  <h1 id="thesis-title">Thesis exhibit</h1>
+  <div class="thesis-container">
+    <div class="left-thesis-container">
+      <video width="100%" controls>
+        <source src="./resources/videos/thesis.mp4" type="video/mp4">
+      </video>
+      <h1>Reimagine urban</h1>
+      <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+        quae ab illo inventore veritatis et quasi architecto beatae vitae
+        dicta sunt explicabo.</h2>
+    </div>
+    <div class="right-thesis-container">
+      <div id="mini-boxes" style="background-color: rgba(211, 211, 211, 0.5)">
+        <img src="./resources/images/thesis-fisma.jpg" alt="phone and paper">
+        <div id="text">
+          <span style="font-weight: bold">Fisma: Design and Prototype</span>
+          <span>Designer showcase of new prototype product</span>
+        </div>
+      </div>
+        <div id="mini-boxes">
+          <img src="./resources/images/thesis-now-and-then.jpg" alt="empire state building">
+          <div id="text">
+            <span style="font-weight: bold">Now and then</span>
+            <span>Research study about New York</span>
+          </div>
+      </div>
+    </div>
   </div>
 </div>
 
 </body>
 
+<footer>
+  <a>© 2016 Colmar Academy. All rights reserved</a>
+  <nav>
+    <a>Terms</a>
+    <a>Privacy</a>
+  </nav>
+</footer>
 
 
 </html>
